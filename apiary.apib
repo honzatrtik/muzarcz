@@ -14,6 +14,7 @@ HOST: http://staging.muzar.cz
         {
             "meta": 
             {
+                "params": {},
                 "linkNext": null,
                 "linkPrev": "http://staging.muzar.cz/ads?until=2013-10-12%2012:40:20"
             },
@@ -58,3 +59,17 @@ HOST: http://staging.muzar.cz
             ]
         }
 
+## Category [/category?since]
+
+### List all categories [GET]
+
++ Parameters
+    + since (optional, datetime) ... Used for calculating number of new ads per category
++ Response 200 (application/json)
+
+        {
+            "data":
+            [
+                
+            ]
+        }
