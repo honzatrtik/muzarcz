@@ -3,12 +3,13 @@ HOST: http://staging.muzar.cz
 
 # muzar.cz
 
-## Ad [/ad{?until}]
+## Ad [/ad{?startId}{&limit}]
 
 ### List all text advertisment items [GET]
 
 + Parameters
-    + until (optional, datetime) ... 
+    + startId (optional, int) ... 
+    + limit (optional, int) ... 
 + Response 200 (application/json)
 
         {
