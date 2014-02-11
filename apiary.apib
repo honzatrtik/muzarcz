@@ -3,13 +3,13 @@ HOST: http://staging.muzar.cz
 
 # muzar.cz
 
-## Ad [/ad{?startId=10}{&limit=30}]
+## Ad [/ad{?startId}{&limit}]
 
 ### List all text advertisment items [GET]
 
 + Parameters
-    + startId (optional, int) ... 
-    + limit (optional, int) ... 
+    + startId (optional, int) ... Starting ad id
+    + limit (optional, int) ... How much items load
 + Response 200 (application/json)
 
         {
@@ -19,7 +19,8 @@ HOST: http://staging.muzar.cz
                     limit: 30
                 },
                 "nextLink": null,
-                "prevLink": "http://staging.muzar.cz/ads?startId=4"
+                "prevLink": "http://staging.muzar.cz/ads?startId=4",
+                "total": 24
             },
             "data": 
             [
