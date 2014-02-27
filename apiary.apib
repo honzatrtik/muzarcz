@@ -80,6 +80,39 @@ HOST: http://staging.muzar.cz
             ]
         }
 
+
+## Ads [/ads{id}]
+
+### List all text advertisment items [GET]
+
++ Response 200 (application/json)
+
+        {
+            "meta": 
+            {
+            },
+            "data": 
+            {
+                "id": 2, 
+                "name": "Fender Telecaster Mexico",
+                "status": "active",
+                "image_url": "http://placehold.it/300x200/008&text=2", 
+                "district": "Olomoucký kraj",
+                "price": 13000,
+                "description": "",
+                "created": "2013-12-12 12:45:30",
+                "categories": [
+                    {
+                    "id": 7,
+                    "str_id": "kontrabasy",
+                    "name": "Kontrabasy"
+                    }
+                ],
+                "link": "http://muzar.localhost/app_dev.php/api/ads/2"
+            }
+        }
+
+
 ## Categories [/categories]
 
 ### List all categories [GET]
