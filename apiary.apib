@@ -3,6 +3,23 @@ HOST: http://staging.muzar.cz
 
 # muzar.cz
 
+
+## Current user [/users/current]
+
+### Show current user details [GET]
+
++ Response 200 (application/json)
+
+        {
+            "meta": {},
+            "data":
+            {
+                email: 'honza.trtik@gmail.com'
+            }
+        }
+
+
+
 ## Ads [/ads{?startId}{&limit}]
 
 ### List all text advertisment items [GET]
@@ -81,7 +98,7 @@ HOST: http://staging.muzar.cz
         }
 
 
-## Ads [/ads{id}]
+## Ads [/ads/{id}]
 
 ### List all text advertisment items [GET]
 
